@@ -1595,10 +1595,8 @@ ngFileUpload.service('UploadValidate', ['UploadDataUrl', '$q', '$timeout', funct
         for (var i = 0; i < split.length; i++) {
           var r = globStringToRegex(split[i]);
           if (r.regexp) {
+            regexp += regexp ? '|' : '';
             regexp += '(' + r.regexp + ')';
-            if (i < split.length - 1) {
-              regexp += '|';
-            }
           } else {
             excludes = excludes.concat(r.excludes);
           }
@@ -2399,7 +2397,7 @@ ngFileUpload.service('UploadResize', ['UploadValidate', '$q', function (UploadVa
             var promises = [upload.emptyPromise()];
             if (includeDir) {
               var file = {type: 'directory'};
-              file.name = file.path = (path || '') + entry.name + entry.name;
+              file.name = file.path = (path || '') + entry.name;
               files.push(file);
             }
             var dirReader = entry.createReader();
