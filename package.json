@@ -1,5 +1,5 @@
 {
-  "name": "ng-file-upload",
+  "name": "ng-file-upload-haiku",
   "version": "12.0.4",
   "devDependencies": {
     "grunt": "^0.4.5",
@@ -22,7 +22,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danialfarid/ng-file-upload.git"
+    "url": "https://github.com/haikulearning/ng-file-upload.git"
   },
   "keywords": [
     "angularjs",
@@ -30,10 +30,10 @@
     "file-upload",
     "javascript"
   ],
-  "author": "danial.farid@gmail.com",
+  "author": "guikubivan@gmail.com",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danialfarid/ng-file-upload/issues"
+    "url": "https://github.com/haikulearning/ng-file-upload/issues"
   },
-  "homepage": "https://github.com/danialfarid/ng-file-upload"
+  "homepage": "https://github.com/haikulearning/ng-file-upload"
 }
